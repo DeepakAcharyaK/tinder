@@ -1,67 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-full h-screen bg-black">
+      <div class="imgcontainer w-full h-full">
+        <div class="maincard w-full absolute z-[3] h-screen">
+          <img src="" class="w-full h-full object-cover object-center" alt="" />
+        </div>
+        <div class="incommingcard w-full absolute z-[2] h-screen">
+          <img src="" class="w-full h-full object-cover object-center" alt="" />
+        </div>
+      </div>
 
-    <div class="w-full h-screen bg-black ">
-        <div class="imgcontainer w-full h-full">
-          <div class="maincard w-full absolute z-[3] h-screen bg-orange-600">
-            <img src="https://images.unsplash.com/photo-1683660107736-1e8a2c02b8d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGRhcmslMjBjb2xvciUyMGdpcmx8ZW58MHwxfDB8fHww" class="w-full h-full object-cover object-center " alt="">
+      <div class="w-full h-screen absolute top-0 left-0 z-[8] text-white flex flex-col justify-between">
+        <div class="navbar flex justify-between items-center px-5 py-6">
+          <div
+            class="profileimg w-[3rem] h-[3rem] bg-red-600 rounded-full overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full h-full object-cover object-center"
+              alt=""
+            />
           </div>
-          <div class="incommingcard w-full absolute z-[2] h-screen bg-green-600"></div>
+          <h3 class="text-xl font-medium tracking-tighter">They liked you</h3>
+          <div
+            class="chaticon relative w-[3rem] flex justify-center items-center h-[3rem] bg-white/50 rounded-full"
+          >
+            <i class="ri-chat-3-fill"></i>
+            <div
+              class="badge bg-red-600 flex justify-center items-center w-5 h-5 absolute top-0 right-0 translate-x-[3px] -transalte-y-[5px] rounded-full"
+            >
+              <h5 class="text-xs font-medium">10</h5>
+            </div>
+          </div>
         </div>
 
-        <div class="w-full h-screen  absolute top-0 left-0 z-[4] text-white flex flex-col justify-between">
-          <div class="navbar flex justify-between items-center px-5 py-6">
-            <div class="profileimg w-[3rem] h-[3rem] bg-red-600 rounded-full overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover object-center" alt="">
-            </div>
-            <h3 class=" text-xl font-medium tracking-tighter">They liked you</h3>
-            <div class="chaticon relative w-[3rem] flex justify-center items-center h-[3rem] bg-white/50 rounded-full">
-              <i class="ri-chat-3-fill"></i>
-              <div class="badge bg-red-600 flex justify-center items-center w-5 h-5 absolute top-0 right-0 translate-x-[3px] -transalte-y-[5px] rounded-full">
-                <h5 class="text-xs font-medium ">10</h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="details w-full ">
-            <div class="heading flex gap-4 ">
-              <i class="w-[2rem] h-[2rem] bg-white text-black flex justify-center font-semibold rounded-full items-center ri-corner-left-up-line"></i>
-              <h1 class="font-bold">USA, California</h1>
+        <div class="detailscontainer w-full">
+          <div class="details px-5 py-6 w-full flex flex-col gap-2">
+            <div class="heading flex gap-4">
+              <i
+                class="w-[2rem] h-[2rem] bg-white text-black flex justify-center font-semibold rounded-full items-center ri-corner-left-up-line"
+              ></i>
+              <h1 class="font-bold"></h1>
             </div>
             <div class="flex gap-5 text-white font-normal mt-1">
               <h1 class="text-7xl tracking-tighter">Victoria</h1>
               <h1 class="opacity-50 text-7xl tracking-tighter">20</h1>
             </div>
-            <div class="tags flex gap-5">
-              <div class="tag flex items-center bg-white/40 px-5 py-3 rounded-full gap-4">
+            <div class="tags flex gap-3">
+              <div
+                class="tag flex items-center bg-white/40 px-5 py-3 rounded-full gap-4"
+              >
                 <i class="ri-music-2-fill"></i>
                 <h3 class="text-sm tracking">Music</h3>
-               </div>
-               <div class="tag flex items-center bg-white/40 px-5 py-3 rounded-full gap-4">
+              </div>
+              <div
+                class="tag flex items-center bg-white/40 px-5 py-3 rounded-full gap-4"
+              >
                 <i class="ri-music-2-fill"></i>
                 <h3 class="text-sm tracking">Music</h3>
-               </div>
-               <div class="tag flex items-center bg-white/40 px-5 py-3 rounded-full gap-4">
+              </div>
+              <div
+                class="tag flex items-center bg-white/40 px-5 py-3 rounded-full gap-4"
+              >
                 <i class="ri-music-2-fill"></i>
                 <h3 class="text-sm tracking">Music</h3>
-               </div>
+              </div>
+            </div>
+            <div class="bio text-white/80 mt-5">
+              <h3 class="text-lg">Bio</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laudantium a reiciendis recusandae illo impedit voluptatum!
+              </p>
+            </div>
+            <div class="btn w-full flex gap-2">
+              <button class="bg-white w-1/2 rounded-xl py-3">
+                <i class="text-black ri-close-line text-xl font-bold"></i>
+              </button>
+              <button class="bg-[#ef1004] w-1/2 rounded-xl py-3">
+                <i class="ri-heart-fill text-xl font-bold"></i>
+              </button>
             </div>
           </div>
-
         </div>
+      </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
